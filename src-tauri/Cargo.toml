@@ -1,11 +1,11 @@
 [package]
-name = "muzz-studio"
+name = "muzz-app"
 version = "0.1.0"
 description = "Muzz Studio App for All Platforms"
 authors = ["Snoword"]
 license = ""
 repository = "https://www.github.com/snowords/muzz-app"
-default-run = "app"
+default-run = "muzz-app"
 edition = "2021"
 rust-version = "1.57"
 
