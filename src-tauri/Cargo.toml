@@ -1,5 +1,5 @@
 [package]
-name = "Muzz Studio"
+name = "muzz-studio"
 version = "0.1.0"
 description = "Muzz Studio App for All Platforms"
 authors = ["Snoword"]
