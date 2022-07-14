@@ -1,10 +1,10 @@
 [package]
-name = "app"
+name = "Muzz Studio"
 version = "0.1.0"
-description = "A Tauri App"
-authors = ["you"]
+description = "Muzz Studio App for All Platforms"
+authors = ["Snoword"]
 license = ""
-repository = ""
+repository = "https://www.github.com/snowords/muzz-app"
 default-run = "app"
 edition = "2021"
 rust-version = "1.57"
