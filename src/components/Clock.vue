@@ -1,9 +1,11 @@
 <script setup lang="ts">
+import Confetti from './Confetti.vue'
 import dayjs from 'dayjs'
 import { ref, computed } from 'vue'
 import { useNow, useStorage, useToggle } from '@vueuse/core'
 
 const show = ref(false)
+const workOver = ref(false)
 
 const now = computed(() => dayjs(useNow().value))
 const end = ref('17:30')
@@ -28,7 +30,10 @@ function minusTime(diff: number) {
 const restTime = computed(() => {
   const diff = endPoint.value.diff(now.value)
   if (diff < 0)
+  {
+    workOver.value = true
     return '下班了~~~'
+  }
   else
     return minusTime(diff)
 })
@@ -79,5 +84,14 @@ const edit = useToggle(show)
         {{ weekDay }}
       </div>
     </div>
+    <div leading-loose>
+      玩会游戏
+      <div>
+        <RouterLink icon-btn mx-2 text-3xl title="扫雷" to="/game">
+          <div i-carbon-game-console />
+        </RouterLink>
+      </div>
+    </div>
   </div>
+  <Confetti :passed="workOver" />
 </template>

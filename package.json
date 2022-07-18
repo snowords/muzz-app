@@ -11,9 +11,12 @@
   "dependencies": {
     "@tauri-apps/api": "^1.0.2",
     "@vueuse/core": "^8.9.2",
+    "canvas-confetti": "^1.5.1",
     "dayjs": "^1.11.3",
     "element-plus": "^2.2.9",
-    "vue": "^3.2.25"
+    "prism-theme-vars": "^0.2.4",
+    "vue": "^3.2.25",
+    "vue-router": "^4.1.2"
   },
   "devDependencies": {
     "@iconify-json/carbon": "^1.1.3",
