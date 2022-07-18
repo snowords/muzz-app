@@ -8,13 +8,13 @@ import { GamePlay } from '../hooks/logic'
 
 const play = new GamePlay(9, 9, 10)
 
-const now = $(useNow())
-const timerMS = $computed(() => Math.round(((play.state.value.endMS ?? +now) - (play.state.value.startMS ?? +now)) / 1000))
+const now = ref(useNow())
+const timerMS = computed(() => Math.round(((play.state.value.endMS ?? +now.value) - (play.state.value.startMS ?? +now.value)) / 1000))
 
 useStorage('vuesweeper-state', play.state)
-const state = $computed(() => play.board)
+const state = computed(() => play.board)
 
-const mineRest = $computed(() => {
+const mineRest = computed(() => {
   if (!play.state.value.mineGenerated)
     return play.mines
   return play.blocks.reduce((a, b) => a - (b.flagged ? 1 : 0), play.mines)

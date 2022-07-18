@@ -1,3 +1,4 @@
+import { ElMessage } from 'element-plus'
 import type { Ref } from 'vue'
 import { ref } from 'vue'
 
@@ -223,7 +224,7 @@ export class GamePlay {
     if (status === 'lost') {
       this.showAllMines()
       setTimeout(() => {
-        alert('lost')
+        ElMessage.error('You lost!')
       }, 10)
     }
   }
