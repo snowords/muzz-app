@@ -224,7 +224,7 @@ export class GamePlay {
     if (status === 'lost') {
       this.showAllMines()
       setTimeout(() => {
-        ElMessage.error('You lost!')
+        ElMessage.error('Game Over!')
       }, 10)
     }
   }

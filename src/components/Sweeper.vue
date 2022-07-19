@@ -41,21 +41,23 @@ watchEffect(() => {
 
 <template>
   <div>
-    <div text-2xl text-center m4>
-      Minesweeper
+    <div mt-6>
+      <span colorful-text >
+        扫雷
+      </span>
     </div>
     <div flex="~ gap1" justify-center p4>
       <button btn @click="play.reset()">
-        New Game
+        新游戏
       </button>
       <button btn @click="newGame('easy')">
-        Easy
+        简单
       </button>
       <button btn @click="newGame('medium')">
-        Medium
+        中等
       </button>
       <button btn @click="newGame('hard')">
-        Hard
+        困难
       </button>
     </div>
 

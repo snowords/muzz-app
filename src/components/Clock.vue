@@ -54,8 +54,10 @@ const edit = useToggle(show)
 
 </script>
 <template>
-  <div text-2xl text-center mt-6>
-    下班倒计时
+  <div mt-6>
+    <span colorful-text inline-clock>
+      下班倒计时
+    </span>
   </div>
   <div max-w-100 m-auto p6 text-left flex="~ col" gap-10>
     <div>
@@ -74,7 +76,7 @@ const edit = useToggle(show)
           />
         </div>
       </div>
-      <div text-4xl>
+      <div colorful-text inline-block text-4xl>
         {{ restTime }}
       </div>
     </div>
