@@ -34,9 +34,9 @@ const numberColors = [
 
 function getBlockClass(block: BlockState) {
   if (block.flagged)
-    return 'bg-gray-500/10'
+    return 'bg-gray-500/30'
   if (!block.revealed)
-    return 'bg-gray-500/10 hover:bg-gray-500/20'
+    return 'bg-gray-500/30 hover:bg-gray-500/50'
 
   return block.mine
     ? 'bg-red-500/50'
@@ -49,8 +49,9 @@ function getBlockClass(block: BlockState) {
     flex="~"
     items-center justify-center
     min-w-8 min-h-8 m="1px"
-    border="0.5 gray-400/10"
+    border="0.5 gray-400/20"
     :class="getBlockClass(block)"
+    class="bg-gray-500/10"
     @mousedown="whichButtons"
   >
     <template v-if="block.flagged">

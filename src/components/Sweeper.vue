@@ -78,6 +78,7 @@ watchEffect(() => {
         :key="y"
         flex="~"
         items-center justify-center w-max ma
+        class="bg-gray-500/20"
       >
         <MineBlock
           v-for="block, x in row" :key="x"
