@@ -53,9 +53,9 @@ const weekDay = weekList[parseInt(dayjs().format('d'))]
 const edit = useToggle(show)
 
 </script>
-<template>
+<template> 
   <div mt-6>
-    <span colorful-text inline-clock>
+    <span text-2xl>
       下班倒计时
     </span>
   </div>
@@ -76,7 +76,7 @@ const edit = useToggle(show)
           />
         </div>
       </div>
-      <div colorful-text inline-block text-4xl>
+      <div text-4xl>
         {{ restTime }}
       </div>
     </div>
