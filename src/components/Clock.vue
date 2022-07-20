@@ -94,6 +94,14 @@ const edit = useToggle(show)
         </RouterLink>
       </div>
     </div>
+    <div leading-loose>
+      随便看看
+      <div>
+        <RouterLink icon-btn mx-2 text-3xl title="扫雷" to="/relax">
+          <div i-carbon-cafe />
+        </RouterLink>
+      </div>
+    </div>
   </div>
   <Confetti :passed="workOver" />
 </template>

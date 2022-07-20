@@ -9,7 +9,7 @@ const toggleDark = useToggle(isDark)
       <div i-carbon-home />
     </RouterLink>
     <button class="icon-btn mx-2 !outline-none" title="切换暗黑模式" @click="toggleDark()">
-      <div i="carbon-sun dark:carbon-moon" />
+      <div i="carbon-haze dark:carbon-haze-night" />
     </button>
   </nav>
 </template>
