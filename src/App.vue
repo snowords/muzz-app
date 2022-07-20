@@ -5,7 +5,7 @@ import Footer from './components/Footer.vue'
 </script>
 
 <template>
-  <div flex="~ col" h-screen text-gray-700 dark:text-gray-200 class="bg-[url(./src/assets/bg.jpg)] dark:bg-[url(./src/assets/bg-dark.jpg)] bg-no-repeat bg-cover bg-center ">
+  <div flex="~ col" h-screen text-gray-700 dark:text-gray-200 class="bg-[url(https://onedrive-vercel-index-git-main-snowords.vercel.app/api/raw/?path=/Muzz/bg.jpg)] dark:bg-[url(https://onedrive-vercel-index-git-main-snowords.vercel.app/api/raw/?path=/Muzz/bg-dark.jpg)] bg-no-repeat bg-cover bg-center">
     <div flex-grow>
       <router-view />
     </div>
